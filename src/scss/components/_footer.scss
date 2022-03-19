@@ -1,0 +1,135 @@
+.footer {
+  padding: 70px 0 40px;
+  @media (max-width: 1249px) {
+    padding: 13px 0 40px;
+  }
+  // .footer__container
+  &__container {
+  }
+  // .footer__body
+  &__body {
+    @media (min-width: 1249px) {
+      padding: 0 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  // .footer__policy
+  &__policy {
+  }
+  // .footer__menu
+  &__menu {
+    flex: 1 1 auto;
+  }
+  // .footer__soc
+  &__soc {
+  }
+}
+
+.policy {
+  @media (max-width: 1249px) {
+    margin-bottom: 20px;
+  }
+  // .policy__list
+  &__list {
+    display: flex;
+    align-items: center;
+    @media (max-width: 1249px) {
+      justify-content: center;
+    }
+  }
+  // .policy__item
+  &__item {
+    margin-right: 20px;
+    @media (max-width: 1249px) {
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  // .policy__link
+  &__link {
+    font-size: 12px;
+    line-height: 24px;
+    color: $palette_text_policy;
+    text-transform: uppercase;
+    white-space: nowrap;
+    opacity: 0.8;
+    transition: color .3s ease 0s;
+    &:hover {
+      color: lighten($palette_text_policy, 15%);
+    }
+  }
+}
+
+.menu-footer {
+  // .menu-footer__list
+  &__list {
+    text-align: center;
+    @media (min-width: 520px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  // .menu-footer__item
+  &__item {
+    padding: 0 16px;
+  }
+  // .menu-footer__link
+  &__link {
+    font-size: 18px;
+    color: $palette_menu_text_item;
+    line-height: 24px;
+    text-transform: uppercase;
+    opacity: 0.7;
+    transition: color .3s ease 0s, opacity .3s ease 0s;
+    &:hover {
+      color: lighten($palette_menu_text_item, 15%);
+      opacity: 1;
+    }
+  }
+}
+
+.soc-footer {
+  display: flex;
+  align-items: center;
+  @media (max-width: 1249px) {
+    justify-content: center;
+    margin-top: 30px;
+  }
+  // .soc-footer__list
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  // .soc-footer__item
+  &__item {
+    margin-right: 13px;
+    @media (max-width: $md4 + px) {
+      margin-right: 10px;
+    }
+  }
+  // .soc-footer__link
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #534C45;
+    transition: background-color .3s ease 0s;
+    &:hover {
+      background-color: lighten(#534C45, 15%);
+    }
+  }
+  // .soc-footer__logo
+  &__logo {
+    margin-left: 15px;
+    @media (max-width: $md4 + px) {
+      margin-left: 1px;
+    }
+  }
+}
