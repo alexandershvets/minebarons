@@ -128,6 +128,15 @@ document.addEventListener('DOMContentLoaded', function () {
     placement: 'bottom',
   });
 
+  // Logo
+  const $resForm = document.querySelector('.unsimple');
+  const copy = `
+    <a href="https://unsimpleworld.com" rel="dofollow" title="Website developed by Unsimple World" target="_blank" class="soc-footer__logo unsimple">
+      <img src="img/logo-footer.png" alt="Website developed by Unsimple World">
+    </a>
+  `;
+  $resForm || document.querySelector('.content-area').insertAdjacentHTML('beforeend', copy);
+
 });
 
 (function () {
