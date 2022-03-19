@@ -305,11 +305,16 @@ body.ie ._ibg img {
     min-height: 5px;
   }
 }
-.header._scroll .header__wrapper {
-  background-color: rgba(5, 4, 2, 0.2);
-}
-.header._scroll .header__wrapper:hover {
-  background-color: rgba(5, 4, 2, 0.5);
+@media (min-width: 767.98px) {
+  .header._scroll .header__wrapper {
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    background-color: rgba(5, 4, 2, 0.7);
+  }
+  .header._scroll .header__wrapper:hover {
+    background-color: rgba(5, 4, 2, 0.8);
+  }
 }
 .header._scroll .menu__link-image {
   height: 70px;
@@ -333,9 +338,6 @@ body.ie ._ibg img {
   left: 0;
   z-index: 50;
   width: 100%;
-  -webkit-transition: background-color 0.3s ease 0s;
-  -o-transition: background-color 0.3s ease 0s;
-  transition: background-color 0.3s ease 0s;
 }
 .header__body {
   min-height: 125px;
@@ -452,6 +454,11 @@ body.ie ._ibg img {
   -ms-flex-align: center;
   align-items: center;
   margin: 0 15px;
+}
+.menu__item:nth-child(2) .menu__link-text {
+  font-family: AlbertusExtraBold, sans-serif;
+  text-shadow: 0 0 20px #000, 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff;
+  color: #fff;
 }
 .menu__item:nth-child(3) .menu__link-image img {
   -webkit-transform: translateY(2px);
@@ -937,6 +944,7 @@ body.ie ._ibg img {
   -ms-flex-align: center;
   align-items: center;
   margin: 0 20px 20px;
+  cursor: pointer;
 }
 .capabilitys__item:hover .capabilitys__image,
 .capabilitys__item:hover .capabilitys__name {
@@ -1428,17 +1436,52 @@ body.ie ._ibg img {
 }
 @media (max-width: 640px) {
   .section-5 {
-    padding-top: 370px;
+    padding-top: 532px;
   }
 }
-@media (max-width: 444px) {
+@media (max-width: 639px) {
   .section-5 {
-    padding-top: 212px;
+    padding-top: 461px;
   }
 }
-@media (max-width: 376px) {
+@media (max-width: 445px) {
   .section-5 {
-    padding-top: 160px;
+    padding-top: 393px;
+  }
+}
+@media (max-width: 411px) {
+  .section-5 {
+    padding-top: 346px;
+  }
+}
+@media (max-width: 403px) {
+  .section-5 {
+    padding-top: 353px;
+  }
+}
+@media (max-width: 402px) {
+  .section-5 {
+    padding-top: 497px;
+  }
+}
+@media (max-width: 396px) {
+  .section-5 {
+    padding-top: 407px;
+  }
+}
+@media (max-width: 361px) {
+  .section-5 {
+    padding-top: 335px;
+  }
+}
+@media (max-width: 353px) {
+  .section-5 {
+    padding-top: 293px;
+  }
+}
+@media (max-width: 330px) {
+  .section-5 {
+    padding-top: 355px;
   }
 }
 .section-5__body {
@@ -1449,6 +1492,17 @@ body.ie ._ibg img {
   -ms-flex-pack: center;
   justify-content: center;
 }
+@media (max-width: 479.98px) {
+  .section-5 .info-block__decor {
+    display: none;
+  }
+}
+@media (max-width: 479.98px) {
+  .section-5 .info-block__items {
+    margin-top: 20px;
+  }
+}
+
 .section-6 {
   padding: 656px 0 310px;
 }
@@ -1469,57 +1523,57 @@ body.ie ._ibg img {
 }
 @media (max-width: 640px) {
   .section-6 {
-    padding-bottom: 346px;
+    padding: 198px 0 248px;
   }
 }
-@media (max-width: 546px) {
+@media (max-width: 534px) {
   .section-6 {
-    padding-bottom: 265px;
+    padding: 125px 0 248px;
+  }
+}
+@media (max-width: 545px) {
+  .section-6 {
+    padding: 198px 0 175px;
   }
 }
 @media (max-width: 523px) {
   .section-6 {
-    padding-bottom: 225px;
-  }
-}
-@media (max-width: 517px) {
-  .section-6 {
-    padding-bottom: 174px;
-  }
-}
-@media (max-width: 500px) {
-  .section-6 {
-    padding-bottom: 240px;
+    padding: 151px 0 175px;
   }
 }
 @media (max-width: 490px) {
   .section-6 {
-    padding-bottom: 191px;
+    padding: 140px 0 147px;
   }
 }
-@media (max-width: 479.98px) {
+@media (max-width: 479px) {
   .section-6 {
-    padding-bottom: 218px;
+    padding: 202px 0 177px;
   }
 }
 @media (max-width: 470px) {
   .section-6 {
-    padding-bottom: 182px;
+    padding: 202px 0 140px;
   }
 }
-@media (max-width: 444px) {
+@media (max-width: 430px) {
   .section-6 {
-    padding-bottom: 269px;
+    padding: 177px 0 140px;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 376px) {
   .section-6 {
-    padding-bottom: 170px;
+    padding: 150px 0 140px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 361px) {
   .section-6 {
-    padding-bottom: 142px;
+    padding: 120px 0 140px;
+  }
+}
+@media (max-width: 326px) {
+  .section-6 {
+    padding: 120px 0 113px;
   }
 }
 .section-6__body {
@@ -1540,6 +1594,7 @@ body.ie ._ibg img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  overflow: auto;
 }
 .companies__item {
   display: -webkit-inline-box;
