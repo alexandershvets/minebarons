@@ -113,7 +113,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Header
   const headerElement = document.querySelector('.header');
-
   const callback = function (entries, observe) {
     if (entries[0].isIntersecting) {
       headerElement.classList.remove('_scroll');
@@ -121,9 +120,13 @@ document.addEventListener('DOMContentLoaded', function () {
       headerElement.classList.add('_scroll');
     }
   };
-
   const headerObserver = new IntersectionObserver(callback);
   headerObserver.observe(headerElement);
+
+  // Tippy
+  tippy('[data-tippy-content]', {
+    placement: 'bottom',
+  });
 
 });
 
