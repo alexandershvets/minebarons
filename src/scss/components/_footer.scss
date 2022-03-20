@@ -41,6 +41,9 @@
   }
   // .policy__item
   &__item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     margin-right: 20px;
     @media (max-width: 1249px) {
       &:last-child {
@@ -50,12 +53,12 @@
   }
   // .policy__link
   &__link {
-    font-size: 12px;
-    line-height: 24px;
+    font-size: 10px;
+    opacity: 0.5;
+    line-height: 1;
     color: $palette_text_policy;
     text-transform: uppercase;
     white-space: nowrap;
-    opacity: 0.8;
     transition: color .3s ease 0s;
     &:hover {
       color: lighten($palette_text_policy, 15%);
@@ -109,9 +112,13 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin-right: 13px;
+    &:not(:last-child) {
+      margin-right: 13px;
+    }
     @media (max-width: $md4 + px) {
-      margin-right: 10px;
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
     }
   }
   // .soc-footer__link
