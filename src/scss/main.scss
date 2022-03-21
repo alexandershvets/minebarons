@@ -750,7 +750,6 @@ body.internal {
       margin-top: -296px;
     }
     &__companys {
-      // padding-bottom: 50px;
     }
     &__body {
       padding-top: 50px;
@@ -840,7 +839,6 @@ body.internal {
     margin-bottom: 47px;
     @include adaptiv-value("margin-bottom", 47, 35, 1);
     font-family: AlbertusExtraBold, sans-serif;
-    // font-size: 45px;
     @include adaptiv-value("font-size", 45, 28, 1);
     line-height: 1;
     color: $palette_internal_subtitle;
@@ -881,4 +879,370 @@ body.internal {
       font-size: 16px;
     }
   }
+  a {
+    color: $palette_internal_link;
+    &:active {
+      color: $palette_internal_link_active;
+    }
+  }
+}
+
+
+// *********************** Roadmap ************************** //
+
+body.roadmap {
+  background-image: none;
+  .wrapper {
+    background-color: #19130F;
+    background-image:
+      url('../img/roadmap_footer_bg.png'),
+      url('../img/internal_header_bg.png');
+    background-size: 111% auto, auto 2481px;
+    background-position: center bottom, center top;
+    background-repeat: no-repeat, no-repeat;
+  }
+
+  .wrapper {
+    background-color: #19130F;
+    background-image:
+      url('../img/roadmap_footer_bg.png'),
+      url('../img/internal_header_bg.png');
+    background-size: cover, auto 2481px;
+    background-position: center bottom -160px, center top;
+    background-repeat: no-repeat, no-repeat;
+    @media (max-width: 1703px) {
+      background-size: cover, auto 2141px;
+    }
+    @media (max-width: $md4 + px) {
+      background-size: cover, auto 1902px;
+    }
+  }
+}
+
+.roadmap {
+  .main__capabilitys {
+    @media (max-width: 787px) {
+      margin-top: 280px;
+    }
+    @media (max-width: 1703px) and (max-height: 900px) {
+      margin-top: 188px;
+    }
+    @media (min-width: 1703px) and (max-height: 900px) {
+      margin-top: 288px;
+    }
+    @media (max-width: 1200px) and (max-height: 900px) {
+      margin-top: 118px;
+    }
+    @media (max-width: 1200px) and (min-height: 900px) {
+      margin-top: 118px;
+    }
+    @media (max-width: 787px) {
+      margin-top: 158px;
+    }
+    @media (max-width: $md3 + px) {
+      margin-top: 328px;
+    }
+    @media (max-width: $md4 + px) {
+      margin-top: 310px;
+    }
+  }
+}
+
+.roadmap .internal-section {
+  background: url('../img/roll_2.png');
+  background-position: center top;
+  background-size: 1814px auto;
+  background-repeat: no-repeat;
+  transform: translateY(0);
+  @media (max-width: 1600px) {
+    background-size: 1574px 100%;
+  }
+  @media (max-width: 787px) {
+    transform: translateY(-60px);
+  }
+  @media (max-width: $md3 + px) {
+    transform: translateY(-90px);
+  }
+  @media (max-width: $md4 + px) {
+    transform: translateY(-50px);
+  }
+  // .internal-section__container
+  &__container {
+  }
+  // .internal-section__body
+  &__body {
+    display: block;
+  }
+  // .internal-section__info-internal
+  &__info-internal {
+  }
+}
+
+.info-roadmap {
+  position: relative;
+  min-height: 1378px;
+  padding: 110px 50px 50px 148px;
+  @media (max-width: 1682px) {
+    padding: 110px 50px 50px 68px;
+  }
+  @media (max-width: 1469px) {
+    padding: 110px 0px 50px 0px;
+  }
+  @media (max-width: 1300px) {
+    display: flex;
+    flex-direction: column;
+    padding: 110px 0px 330px 0px;
+  }
+  @media (max-width: 704px) {
+    padding: 150px 0px 330px 0px;
+  }
+  @media (max-width: $md4 + px) {
+    padding: 150px 0px 330px 0px;
+  }
+  // .info-roadmap__title
+  &__title {
+    max-width: 686px;
+    img {
+      max-width: 100%;
+    }
+    @media (max-width: 1300px) {
+      margin: 0 auto 50px;
+      margin-bottom: 50px;
+      max-width: 530px;
+    }
+  }
+  // .info-roadmap__body
+  &__body {
+    transform: translateY(-170px);
+    @media (max-width: 1300px) {
+      transform: translateY(0);
+      flex: 1 0 auto;
+    }
+  }
+  // .info-roadmap__list-top,
+  // .info-roadmap__list-bottom
+  &__list-top,
+  &__list-bottom {
+    display: flex;
+    justify-content: center;
+    @media (max-width: 1300px) {
+      align-items: flex-start !important;
+      flex-wrap: wrap;
+    }
+  }
+  &__list-top {
+    align-items: flex-end;
+    margin: 0 -25px;
+    @media (max-width: 1469px) {
+      margin: 0 -12.5px;
+    }
+  }
+  // .info-roadmap__list-bottom
+  &__list-bottom {
+    align-items: flex-start;
+    .info-roadmap__list-block {
+      min-width: 296px;
+      min-height: 278px;
+      padding: 0 20px 40px 0px;
+    }
+    .info-roadmap__time {
+      margin-bottom: 20px;
+    }
+    .info-roadmap__item {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  // .info-roadmap__list-column
+  &__list-column {
+    flex: 0 1 25%;
+    display: flex;
+    justify-content: center;
+    padding: 0 50px 0px;
+    @media (max-width: 1469px) {
+      padding: 0 25px 0px;
+    }
+    @media (max-width: 1004px) {
+      flex: 0 1 50%;
+    }
+  }
+  // .info-roadmap__list-block
+  &__list-block {
+    min-width: 280px;
+    padding: 30px 20px 0px 0px;
+    background-position: right 0px top -63px;
+    background-repeat: no-repeat;
+    @media (max-width: 1004px) {
+      width: 300px;
+    }
+    @media (max-width: $md4 + px) {
+      max-width: 280px;
+    }
+    @media (max-width: 1300px) {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 40px;
+      padding: 0;
+      background-image: none !important;
+      .info-roadmap__time {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      &_1,
+      &_2,
+      &_3,
+      &_4 {
+        .info-roadmap__time {
+          order: -1;
+        }
+      }
+    }
+    &_1 {
+      background-image: url('../img/rm_dec_1.png');
+    }
+    &_2 {
+      background-image: url('../img/rm_dec_1.png');
+      background-position: right 0px top -58px;
+      background-size: auto 113%;
+    }
+    &_3 {
+      background-image: url('../img/rm_dec_4.png');
+      background-position: right 0px top -6px;
+      background-size: auto;
+      .info-roadmap__time {
+        text-align: center;
+      }
+    }
+    &_4 {
+      background-image: url('../img/rm_dec_4.png');
+      background-position: right 0px top -6px;
+      background-size: auto;
+      .info-roadmap__time {
+        text-align: center;
+      }
+    }
+    &_5 {
+      background-image: url('../img/rm_dec_3.png');
+      background-position: right 0px top 9px;
+      background-size: auto;
+    }
+    &_6 {
+      background-image: url('../img/rm_dec_2.png');
+      background-position: right 0px top 9px;
+      background-size: auto;
+      .info-roadmap__time {
+        text-align: center;
+      }
+    }
+    &_7 {
+      background-image: url('../img/rm_dec_3.png');
+      background-position: right 0px top 9px;
+      background-size: auto;
+      .info-roadmap__time {
+        text-align: center;
+      }
+    }
+  }
+  // .info-roadmap__item-list
+  &__item-list {
+  }
+  // .info-roadmap__item
+  &__item {
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 27px;
+    font-family: Philosopher, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000;
+    &::before {
+      content: '';
+      position: absolute;
+      top: -2px;
+      left: 0;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: url('../img/rm_mark.png') center /contain no-repeat;
+    }
+  }
+  // .info-roadmap__time
+  &__time {
+    font-family: AlbertusExtraBold, sans-serif;
+    font-size: 12px;
+    line-height: 30px;
+    color: $palette_internal_time;
+    text-transform: uppercase;
+  }
+  // .info-roadmap__timeline
+  &__timeline {
+    width: 100%;
+    height: 87px;
+    background-image: url('../img/timeline.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    @media (max-width: 1300px) {
+      display: none;
+    }
+  }
+  // .info-roadmap__footer
+  &__footer {
+    display: flex;
+    align-items: center;
+    margin-right: -30px;
+    margin-left: -30px;
+    height: 133px;
+    padding: 50px 110px;
+    background-image: url('../img/frame.png');
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transform: translateY(-120px);
+    @media (max-width: 1600px) {
+      margin-right: 0;
+      margin-left: 0;
+      padding: 50px 170px;
+      background-size: 97% 100%;
+      transform: translateY(-52px);
+    }
+    @media (max-width: 1300px) {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      @include adaptiv-value("padding-top", 47, 17, 1);
+      @include adaptiv-value("padding-bottom", 53, 23, 1);
+      @include adaptiv-value("padding-left", 100, 10, 1);
+      @include adaptiv-value("padding-right", 100, 10, 1);
+      transform: translateY(-140px);
+    }
+    @media (max-width: $md3 + px) {
+      background-image: none !important;
+      transform: none;
+      bottom: 150px;
+    }
+    @media (max-width: $md4 + px) {
+      bottom: 161px;
+    }
+  }
+  // .info-roadmap__footer-text
+  &__footer-text {
+    font-family: Philosopher, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
+    span {
+      color: $palette_roadmap_footer_text;
+    }
+    @media (max-width: $md2 + px) {
+      font-size: 14px;
+    }
+    @media (max-width: $md4 + px) {
+      font-size: 12px;
+    }
+  }
+}
+
+.roadmap .footer {
+  margin-top: 0;
 }

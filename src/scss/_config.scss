@@ -19,18 +19,22 @@ $color_mineshaft: #2f2b2b;
 $accent: $color_orange;
 
 // LAYOUT PALETTE COLORS
-$palette_main_bg:           $color_black;
-$palette_text_subtitle:     $color_rob_roy;
-$palette_text_title:        $color_orange;
-$palette_text_descr:        $color_aths_special;
-$palette_menu_text_item:    $color_aths_special;
-$palette_menu_burger:       $color_aths_special;
-$palette_text_capabilitys:  $color_grey;
-$palette_text_policy:       $color_orange;
-$palette_text_tippy:        $color_rob_roy;
-$palette_border_tippy:      $color_orange;
-$palette_internal_title:    $color_mineshaft;
-$palette_internal_subtitle: $color_red;
+$palette_main_bg:              $color_black;
+$palette_text_subtitle:        $color_rob_roy;
+$palette_text_title:           $color_orange;
+$palette_text_descr:           $color_aths_special;
+$palette_menu_text_item:       $color_aths_special;
+$palette_menu_burger:          $color_aths_special;
+$palette_text_capabilitys:     $color_grey;
+$palette_text_policy:          $color_orange;
+$palette_text_tippy:           $color_rob_roy;
+$palette_border_tippy:         $color_orange;
+$palette_internal_title:       $color_mineshaft;
+$palette_internal_subtitle:    $color_red;
+$palette_internal_link:        $color_red;
+$palette_internal_link_active: $color_orange;
+$palette_internal_time:        $color_red;
+$palette_roadmap_footer_text:  $color_red;
 
 // FONTS
 $fontFamily: OpenSans, sans-serif;
